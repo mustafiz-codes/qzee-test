@@ -3,7 +3,12 @@
 .theme-bg {
   background-color: #323234;
 }
-
+.gray-bg {
+  background-color: #dadcdd;
+}
+.gray-color {
+  color: #dadcdd;
+}
 .primary-color {
   color: #ffc700;
 }

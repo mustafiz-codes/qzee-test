@@ -1,11 +1,17 @@
 import ReactDOM from "react-dom";
-import { BrowserRouter, Link } from "react-router-dom";
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+} from "react-router-dom";
 import "./App.css";
 import Logo from "./Assets/brand-logo/logo.svg";
-import SideNav from "./Components/Sidenav";
+import SideNav from "./Components/SideNav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import Topbar from "./Components/TopBar";
 
 function App() {
   return (
@@ -27,10 +33,9 @@ function App() {
           <div className="w-48 fixed left-0 top-0 h-screen theme-bg ">
             <SideNav />
           </div>
+
           <main class="flex-1 ml-48">
-            <div class="h-96 bg-amber-400 p-10">
-              <h1 class="text-4xl">Top Content</h1>
-            </div>
+            <Topbar />
             <div class="h-96 bg-white p-10">
               <h1 class="text-4xl">Middle Content</h1>
             </div>
