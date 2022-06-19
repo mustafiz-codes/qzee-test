@@ -12,6 +12,9 @@ import SideNav from "./Components/SideNav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import Topbar from "./Components/TopBar";
+import StaffShift from "./Components/StaffShift";
+import TableView from "./Components/TableView";
+import Info from "./Components/Info";
 
 function App() {
   return (
@@ -36,14 +39,27 @@ function App() {
 
           <main class="flex-1 ml-48">
             <Topbar />
-            <div class="h-96 bg-white p-10">
-              <h1 class="text-4xl">Middle Content</h1>
+
+            <div className="container-fluid mx-auto px-8 my-8">
+              <div className="grid grid-cols-8 gap-4">
+                <div className="col-span-6 w-100">
+                  <TableView />
+                </div>
+                <div className="col-span-2 w-100">
+                  <Info />
+                </div>
+              </div>
             </div>
-            <div class="h-96 bg-green-400 p-10">
-              <h1 class="text-4xl">Middle Content</h1>
-            </div>
-            <div class="h-96 bg-indigo-400 p-10">
-              <h1 class="text-4xl">Last Content</h1>
+
+            <div className="container-fluid mx-auto px-8 my-8">
+              <div className="grid grid-cols-8 gap-4">
+                <div className="col-span-6 w-100">
+                  <TableView />
+                </div>
+                <div className="col-span-2 w-100">
+                  <Info />
+                </div>
+              </div>
             </div>
           </main>
         </div>

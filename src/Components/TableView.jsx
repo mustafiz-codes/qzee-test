@@ -15,7 +15,7 @@ import { Menu, Transition } from "@headlessui/react";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-function StaffShift() {
+function TableView() {
   return (
     <div className="border rounded-md ">
       <div className="border-b-2 py-4 px-4 p-0 flex items-center justify-between">
@@ -272,4 +272,4 @@ function StaffShift() {
   );
 }
 
-export default StaffShift;
+export default TableView;
