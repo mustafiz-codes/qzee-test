@@ -1,0 +1,18 @@
+@import url("./tailwind.css");
+
+.theme-bg {
+  background-color: #323234;
+}
+
+.primary-color {
+  color: #ffc700;
+}
+.primary-bg {
+  background-color: #ffc700;
+}
+.secondary-color {
+  color: #8ceeb5;
+}
+.secondary-bg {
+  background-color: #8ceeb5;
+}
