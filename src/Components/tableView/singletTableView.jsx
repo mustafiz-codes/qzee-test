@@ -1,5 +1,4 @@
 import Users from "../../Assets/icons/Users-group-fill.svg";
-import Settings from "../../Assets/icons/Settings.svg";
 
 function TableView(props) {
   return (

@@ -1,20 +1,5 @@
-import ReactDOM from "react-dom";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Routes,
-  Route,
-  Link,
-  useParams,
-} from "react-router-dom";
 import "../Style/app.css";
-import Logo from "../Assets/brand-logo/logo.svg";
-import SideNav from "../Components/sideNav/sideNav";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import Topbar from "../Components/topBar/index";
 import StaffShift from "../Components/staffShift/index";
-
 import TableView from "../Components/tableView/index";
 import Info from "../Components/info/index";
 import Notifications from "../Components/notifications/index";

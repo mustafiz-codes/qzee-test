@@ -1,8 +1,4 @@
-import MoreIcon from "../../Assets/icons/MoreIcon.svg";
-import Person from "../../Assets/person.svg";
 import Settings from "../../Assets/icons/Settings.svg";
-import Timer from "../../Assets/icons/time-fill-primary.svg";
-import MapsRoad from "../../Assets/icons/Maps-road-map-fill.svg";
 import StaffInfo from "./staffInfo";
 
 function Index() {

@@ -1,4 +1,3 @@
-import Users from "../../Assets/icons/Users-group-fill.svg";
 import Settings from "../../Assets/icons/Settings.svg";
 import SingleTable from "./singletTableView";
 

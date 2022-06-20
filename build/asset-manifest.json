@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce07ccdb.css",
-    "main.js": "/static/js/main.a98e56e3.js",
-    "static/media/ProfileIcon.svg": "/static/media/ProfileIcon.14e772a177da2a6fe1eb62d0871bcae7.svg",
-    "static/media/person.svg": "/static/media/person.2505c58e4e68a92addef800e37f90117.svg",
-    "static/media/logo.svg": "/static/media/logo.98124d349fddc92ea8c64b3419d9f4e6.svg",
-    "static/media/Settings.svg": "/static/media/Settings.2e2876d9048b6f0cedc16bf7b19ba942.svg",
-    "static/media/Maps-road-map-fill.svg": "/static/media/Maps-road-map-fill.1919615f4196e18ebd6edd8d62d27477.svg",
-    "static/media/QZee-icon.svg": "/static/media/QZee-icon.b9c2e5b5504b41b2448b776a75b4d301.svg",
-    "static/media/MapsLifebuoy-fill.svg": "/static/media/MapsLifebuoy-fill.0db3d45988134d153460fe83ce4451ad.svg",
-    "static/media/Users-group-fill.svg": "/static/media/Users-group-fill.62f60646d2c86bda535776baf996edff.svg",
-    "static/media/thumb-down-fill.svg": "/static/media/thumb-down-fill.2a54201e7f4d4bf0dd8d8fd8e2d08a8d.svg",
-    "static/media/thumb-up-fill.svg": "/static/media/thumb-up-fill.8ed85ba9f2222213311e0d555be84176.svg",
-    "static/media/Business-calendar-check-fill.svg": "/static/media/Business-calendar-check-fill.20ebe905c0ec6305e811e1eeb87696e7.svg",
-    "index.html": "/index.html",
-    "static/media/home-fill.svg": "/static/media/home-fill.cbd8bc2636667ff23a89d56f9153d6de.svg",
-    "static/media/Maps-restaurant-2-fill.svg": "/static/media/Maps-restaurant-2-fill.4530c14ed2011d9d34ddbd7bfdd6c89f.svg",
-    "static/media/MoreIcon.svg": "/static/media/MoreIcon.7d2d7094c2619b7c889b6163a6df5eac.svg",
-    "static/media/MediaNotification-3-fill.svg": "/static/media/MediaNotification-3-fill.9993363a242f2b82e0bf821a82c41124.svg",
-    "static/media/time-fill-primary.svg": "/static/media/time-fill-primary.4cf0630cef77ea4b8482ef5ee75be6e2.svg",
-    "main.ce07ccdb.css.map": "/static/css/main.ce07ccdb.css.map",
-    "main.a98e56e3.js.map": "/static/js/main.a98e56e3.js.map"
+    "main.css": "/qzee-test/static/css/main.705c6d82.css",
+    "main.js": "/qzee-test/static/js/main.1ad31388.js",
+    "static/media/ProfileIcon.svg": "/qzee-test/static/media/ProfileIcon.14e772a177da2a6fe1eb62d0871bcae7.svg",
+    "static/media/person.svg": "/qzee-test/static/media/person.2505c58e4e68a92addef800e37f90117.svg",
+    "static/media/logo.svg": "/qzee-test/static/media/logo.98124d349fddc92ea8c64b3419d9f4e6.svg",
+    "static/media/Settings.svg": "/qzee-test/static/media/Settings.2e2876d9048b6f0cedc16bf7b19ba942.svg",
+    "static/media/Maps-road-map-fill.svg": "/qzee-test/static/media/Maps-road-map-fill.1919615f4196e18ebd6edd8d62d27477.svg",
+    "static/media/QZee-icon.svg": "/qzee-test/static/media/QZee-icon.b9c2e5b5504b41b2448b776a75b4d301.svg",
+    "static/media/MapsLifebuoy-fill.svg": "/qzee-test/static/media/MapsLifebuoy-fill.0db3d45988134d153460fe83ce4451ad.svg",
+    "static/media/Users-group-fill.svg": "/qzee-test/static/media/Users-group-fill.62f60646d2c86bda535776baf996edff.svg",
+    "static/media/thumb-down-fill.svg": "/qzee-test/static/media/thumb-down-fill.2a54201e7f4d4bf0dd8d8fd8e2d08a8d.svg",
+    "static/media/thumb-up-fill.svg": "/qzee-test/static/media/thumb-up-fill.8ed85ba9f2222213311e0d555be84176.svg",
+    "index.html": "/qzee-test/index.html",
+    "static/media/Business-calendar-check-fill.svg": "/qzee-test/static/media/Business-calendar-check-fill.20ebe905c0ec6305e811e1eeb87696e7.svg",
+    "static/media/home-fill.svg": "/qzee-test/static/media/home-fill.cbd8bc2636667ff23a89d56f9153d6de.svg",
+    "static/media/Maps-restaurant-2-fill.svg": "/qzee-test/static/media/Maps-restaurant-2-fill.4530c14ed2011d9d34ddbd7bfdd6c89f.svg",
+    "static/media/MoreIcon.svg": "/qzee-test/static/media/MoreIcon.7d2d7094c2619b7c889b6163a6df5eac.svg",
+    "static/media/MediaNotification-3-fill.svg": "/qzee-test/static/media/MediaNotification-3-fill.9993363a242f2b82e0bf821a82c41124.svg",
+    "static/media/time-fill-primary.svg": "/qzee-test/static/media/time-fill-primary.4cf0630cef77ea4b8482ef5ee75be6e2.svg",
+    "main.705c6d82.css.map": "/qzee-test/static/css/main.705c6d82.css.map",
+    "main.1ad31388.js.map": "/qzee-test/static/js/main.1ad31388.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce07ccdb.css",
-    "static/js/main.a98e56e3.js"
+    "static/css/main.705c6d82.css",
+    "static/js/main.1ad31388.js"
   ]
 }
