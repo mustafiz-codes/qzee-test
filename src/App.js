@@ -15,6 +15,7 @@ import Topbar from "./Components/TopBar";
 import StaffShift from "./Components/StaffShift";
 import TableView from "./Components/TableView";
 import Info from "./Components/Info";
+import Notifications from "./Components/Notifications";
 
 function App() {
   return (
@@ -54,10 +55,10 @@ function App() {
             <div className="container-fluid mx-auto px-8 my-8">
               <div className="grid grid-cols-8 gap-4">
                 <div className="col-span-6 w-100">
-                  <TableView />
+                  <StaffShift />
                 </div>
                 <div className="col-span-2 w-100">
-                  <Info />
+                  <Notifications />
                 </div>
               </div>
             </div>

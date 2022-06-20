@@ -1,12 +1,12 @@
 import ReactDOM from "react-dom";
 import { Fragment } from "react";
 import { BrowserRouter, Link } from "react-router-dom";
-import HomeFillIcon from "../Assets/icons/home-fill.svg";
-import Qzee from "../Assets/icons/QZee-icon.svg";
-import Calender from "../Assets/icons/Business-calendar-check-fill.svg";
-import LifeBuoy from "../Assets/icons/MapsLifebuoy-fill.svg";
+import MoreIcon from "../Assets/icons/MoreIcon.svg";
+import Person from "../Assets/person.svg";
 import Users from "../Assets/icons/Users-group-fill.svg";
 import Settings from "../Assets/icons/Settings.svg";
+import Timer from "../Assets/icons/time-fill-primary.svg";
+import MapsRoad from "../Assets/icons/Maps-road-map-fill.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -17,254 +17,159 @@ function classNames(...classes) {
 }
 function StaffShift() {
   return (
-    <div className="border rounded-md ">
-      <div className="border-b-2 py-4 px-4 p-0 flex items-center justify-between">
-        <p>Table Overview (45)</p>
-        <div className="flex">
-          <ul className="mr-8">
-            <li className="flex items-center">
-              <div className="w-[10px] h-[10px] bg-gray-300 rounded-3xl mr-2"></div>{" "}
-              Unconfirmed
-            </li>
-          </ul>
-          <ul className="mr-8">
-            <li className="flex items-center">
-              <div className="w-[10px] h-[10px] bg-green-300 rounded-3xl mr-2"></div>{" "}
-              Active (under set time)
-            </li>
-          </ul>
-          <ul className="mr-8">
-            <li className="flex items-center">
-              <div className="w-[10px] h-[10px] bg-yellow-400 rounded-3xl mr-2"></div>{" "}
-              Active (over set time)
-            </li>
-          </ul>
-          <ul className="mr-8">
-            <li className="flex items-center">
-              <div className="w-[10px] h-[10px] bg-red-400 rounded-3xl mr-2"></div>{" "}
-              Table Inactive
-            </li>
-          </ul>
-        </div>
+    <div className="">
+      <div className="mb-4 p-0 flex items-center justify-between">
+        <p className="font-medium text-xl">Staff on shift (45)</p>
 
-        <img
-          className="mx-3 border p-2 rounded-full border-yellow-300"
-          src={Settings}
-          alt=""
-        />
+        <button className="border py-2 px-4 primary-bg flex items-center rounded-3xl border-yellow-300">
+          <img className="mr-2" src={Settings} alt="" />
+          Employee settings
+        </button>
       </div>
-      <div className="px-4 my-4 h-[410px] overflow-auto">
-        <div className="grid grid-cols-6 gap-4 ">
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">1</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">2</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">3</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">4</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">5</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="red-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">6</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">7</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">8</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">9</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
 
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">10</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
+      <div className="grid grid-cols-4 gap-4 ">
+        <div className="green-bg rounded-lg p-4 w-100">
+          <div className="flex justify-between items-start">
+            <img className="w-12 pr-2" src={Person} alt="users" />
+            <div className="flex items-center">
+              <img className="w-6 mr-2" src={Timer} alt="" />
+              <p className="text-base">2:32:22</p>
             </div>
+            <img className="w-6" src={MoreIcon} alt="" />
           </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">11</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="my-4">
+            <h2 className="font-bold text-lg">Wade Warren</h2>
+            <p className="text-sm">SMM manager</p>
           </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">12</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="flex">
+            <img className="mr-1" src={MapsRoad} alt="" />
+            <p>Cardiff Dough&Co</p>
           </div>
-          <div className="primary-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">13</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
+        </div>
+        <div className="green-bg rounded-lg p-4 w-100">
+          <div className="flex justify-between items-start">
+            <img className="w-12 pr-2" src={Person} alt="users" />
+            <div className="flex items-center">
+              <img className="w-6 mr-2" src={Timer} alt="" />
+              <p className="text-base">2:32:22</p>
             </div>
+            <img className="w-6" src={MoreIcon} alt="" />
           </div>
-          <div className="primary-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">14</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="my-4">
+            <h2 className="font-bold text-lg">Wade Warren</h2>
+            <p className="text-sm">SMM manager</p>
           </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">15</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="flex">
+            <img className="mr-1" src={MapsRoad} alt="" />
+            <p>Cardiff Dough&Co</p>
           </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">16</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
+        </div>
+        <div className="green-bg rounded-lg p-4 w-100">
+          <div className="flex justify-between items-start">
+            <img className="w-12 pr-2" src={Person} alt="users" />
+            <div className="flex items-center">
+              <img className="w-6 mr-2" src={Timer} alt="" />
+              <p className="text-base">2:32:22</p>
             </div>
+            <img className="w-6" src={MoreIcon} alt="" />
           </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">17</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="my-4">
+            <h2 className="font-bold text-lg">Wade Warren</h2>
+            <p className="text-sm">SMM manager</p>
           </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">18</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="flex">
+            <img className="mr-1" src={MapsRoad} alt="" />
+            <p>Cardiff Dough&Co</p>
           </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">19</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
+        </div>
+        <div className="green-bg rounded-lg p-4 w-100">
+          <div className="flex justify-between items-start">
+            <img className="w-12 pr-2" src={Person} alt="users" />
+            <div className="flex items-center">
+              <img className="w-6 mr-2" src={Timer} alt="" />
+              <p className="text-base">2:32:22</p>
             </div>
+            <img className="w-6" src={MoreIcon} alt="" />
           </div>
-          <div className="red-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">20</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="my-4">
+            <h2 className="font-bold text-lg">Wade Warren</h2>
+            <p className="text-sm">SMM manager</p>
           </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">21</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="flex">
+            <img className="mr-1" src={MapsRoad} alt="" />
+            <p>Cardiff Dough&Co</p>
           </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">22</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
+        </div>
+        <div className="green-bg rounded-lg p-4 w-100">
+          <div className="flex justify-between items-start">
+            <img className="w-12 pr-2" src={Person} alt="users" />
+            <div className="flex items-center">
+              <img className="w-6 mr-2" src={Timer} alt="" />
+              <p className="text-base">2:32:22</p>
             </div>
+            <img className="w-6" src={MoreIcon} alt="" />
           </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">23</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="my-4">
+            <h2 className="font-bold text-lg">Wade Warren</h2>
+            <p className="text-sm">SMM manager</p>
           </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">24</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="flex">
+            <img className="mr-1" src={MapsRoad} alt="" />
+            <p>Cardiff Dough&Co</p>
           </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">25</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
+        </div>
+        <div className="green-bg rounded-lg p-4 w-100">
+          <div className="flex justify-between items-start">
+            <img className="w-12 pr-2" src={Person} alt="users" />
+            <div className="flex items-center">
+              <img className="w-6 mr-2" src={Timer} alt="" />
+              <p className="text-base">2:32:22</p>
             </div>
+            <img className="w-6" src={MoreIcon} alt="" />
           </div>
-          <div className="red-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">26</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="my-4">
+            <h2 className="font-bold text-lg">Wade Warren</h2>
+            <p className="text-sm">SMM manager</p>
           </div>
-          <div className="primary-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">27</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="flex">
+            <img className="mr-1" src={MapsRoad} alt="" />
+            <p>Cardiff Dough&Co</p>
           </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">28</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
+        </div>
+        <div className="green-bg rounded-lg p-4 w-100">
+          <div className="flex justify-between items-start">
+            <img className="w-12 pr-2" src={Person} alt="users" />
+            <div className="flex items-center">
+              <img className="w-6 mr-2" src={Timer} alt="" />
+              <p className="text-base">2:32:22</p>
             </div>
+            <img className="w-6" src={MoreIcon} alt="" />
           </div>
-          <div className="green-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">29</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
+          <div className="my-4">
+            <h2 className="font-bold text-lg">Wade Warren</h2>
+            <p className="text-sm">SMM manager</p>
           </div>
-          <div className="gray-bg h-[100px] rounded-md p-4 w-100">
-            <h4 className="text-base">30</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
+          <div className="flex">
+            <img className="mr-1" src={MapsRoad} alt="" />
+            <p>Cardiff Dough&Co</p>
+          </div>
+        </div>
+        <div className="gray-bg rounded-lg p-4 w-100">
+          <div className="flex justify-between items-start">
+            <img className="w-12 pr-2" src={Person} alt="users" />
+            <div className="flex items-center">
+              <img className="w-6 mr-2" src={Timer} alt="" />
+              <p className="text-base">2:32:22</p>
             </div>
+            <img className="w-6" src={MoreIcon} alt="" />
+          </div>
+          <div className="my-4">
+            <h2 className="font-bold text-lg">Wade Warren</h2>
+            <p className="text-sm">SMM manager</p>
+          </div>
+          <div className="flex">
+            <img className="mr-1" src={MapsRoad} alt="" />
+            <p>Cardiff Dough&Co</p>
           </div>
         </div>
       </div>
