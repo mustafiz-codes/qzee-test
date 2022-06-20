@@ -1,33 +1,34 @@
 import Users from "../../Assets/icons/Users-group-fill.svg";
 import Settings from "../../Assets/icons/Settings.svg";
+import SingleTable from "./singletTableView";
 
 function Index() {
   return (
     <div className="border rounded-lg ">
       <div className="border-b-2 py-4 px-4 p-0 flex items-center justify-between">
-        <p>Table Overview (45)</p>
+        <h4 className="title-2">Table Overview (45)</h4>
         <div className="flex">
           <ul className="mr-8">
-            <li className="flex items-center">
-              <div className="w-[10px] h-[10px] bg-gray-300 rounded-3xl mr-2"></div>{" "}
+            <li className="flex items-center list-text">
+              <div className="w-[10px] h-[10px] bg-gray-300 rounded-3xl mr-2 "></div>{" "}
               Unconfirmed
             </li>
           </ul>
           <ul className="mr-8">
-            <li className="flex items-center">
-              <div className="w-[10px] h-[10px] bg-green-300 rounded-3xl mr-2"></div>{" "}
+            <li className="flex items-center list-text">
+              <div className="w-[10px] h-[10px] bg-green-300 rounded-3xl mr-2 "></div>{" "}
               Active (under set time)
             </li>
           </ul>
           <ul className="mr-8">
-            <li className="flex items-center">
-              <div className="w-[10px] h-[10px] bg-yellow-400 rounded-3xl mr-2"></div>{" "}
+            <li className="flex items-center list-text">
+              <div className="w-[10px] h-[10px] bg-yellow-400 rounded-3xl mr-2 "></div>{" "}
               Active (over set time)
             </li>
           </ul>
           <ul className="mr-8">
-            <li className="flex items-center">
-              <div className="w-[10px] h-[10px] bg-red-400 rounded-3xl mr-2"></div>{" "}
+            <li className="flex items-center list-text">
+              <div className="w-[10px] h-[10px] bg-red-400 rounded-3xl mr-2 "></div>{" "}
               Table Inactive
             </li>
           </ul>
@@ -41,217 +42,126 @@ function Index() {
       </div>
       <div className="px-4 mt-4  h-[410px] overflow-auto">
         <div className="grid grid-cols-6 gap-4 ">
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">1</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">2</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">3</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">4</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">5</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="red-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">6</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">7</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">8</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">9</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">10</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">11</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">12</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="primary-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">13</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="primary-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">14</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">15</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">16</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">17</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">18</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">19</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="red-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">20</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">21</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">22</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">23</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">24</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">25</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="red-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">26</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="primary-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">27</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">28</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="green-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">29</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
-          <div className="gray-bg h-[100px] rounded-lg p-4 w-100">
-            <h4 className="text-base">30</h4>
-            <div className="flex mt-6">
-              <img className="w-6 pr-2" src={Users} alt="users" />
-              <p className="text-xs">4</p>
-            </div>
-          </div>
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="1"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="2"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="3"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="4"
+            members="5"
+          />
+          <SingleTable
+            class="red-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="5"
+            members="5"
+          />
+          <SingleTable
+            class="gray-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="6"
+            members="5"
+          />
+          <SingleTable
+            class="gray-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="7"
+            members="5"
+          />
+          <SingleTable
+            class="gray-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="8"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="9"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="10"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="11"
+            members="5"
+          />
+          <SingleTable
+            class="primary-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="12"
+            members="5"
+          />
+          <SingleTable
+            class="primary-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="13"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="14"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="15"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="16"
+            members="5"
+          />
+          <SingleTable
+            class="red-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="17"
+            members="5"
+          />
+          <SingleTable
+            class="gray-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="18"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="19"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="20"
+            members="5"
+          />
+          <SingleTable
+            class="gray-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="21"
+            members="5"
+          />
+          <SingleTable
+            class="green-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="22"
+            members="5"
+          />
+          <SingleTable
+            class="primary-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="23"
+            members="5"
+          />
+          <SingleTable
+            class="primary-bg h-[100px] rounded-lg p-4 w-100"
+            tableNumber="24"
+            members="5"
+          />
         </div>
       </div>
     </div>

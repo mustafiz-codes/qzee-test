@@ -1,5 +1,9 @@
-@import url("./tailwind.css");
 @import url("./responsive.css");
+@import url("./custom.css");
+@import url("./tailwind.css");
+* {
+  font-family: "Roboto";
+}
 
 .theme-bg {
   background-color: #323234;
