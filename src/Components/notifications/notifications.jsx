@@ -1,18 +1,11 @@
-import ReactDOM from "react-dom";
-import { Fragment, useState } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
-import HomeFillIcon from "../Assets/icons/home-fill.svg";
-import Qzee from "../Assets/icons/QZee-icon.svg";
-import Calender from "../Assets/icons/Business-calendar-check-fill.svg";
-import LifeBuoy from "../Assets/icons/MapsLifebuoy-fill.svg";
-import ThumbDown from "../Assets/icons/thumb-down-fill.svg";
-import ThumbUp from "../Assets/icons/thumb-up-fill.svg";
-
+import { useState } from "react";
+import Qzee from "../../Assets/icons/QZee-icon.svg";
+import ThumbDown from "../../Assets/icons/thumb-down-fill.svg";
+import ThumbUp from "../../Assets/icons/thumb-up-fill.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { Menu, Transition } from "@headlessui/react";
 
-function Info() {
+function Notifications() {
   const [notificationType, setNotificationType] = useState(true);
   const [notificationFocus, setNotificationFocus] = useState(true);
 
@@ -208,4 +201,4 @@ function Info() {
   );
 }
 
-export default Info;
+export default Notifications;

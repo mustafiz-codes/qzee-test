@@ -1,4 +1,5 @@
 @import url("./tailwind.css");
+@import url("./responsive.css");
 
 .theme-bg {
   background-color: #323234;

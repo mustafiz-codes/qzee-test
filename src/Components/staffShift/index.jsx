@@ -1,21 +1,10 @@
-import ReactDOM from "react-dom";
-import { Fragment } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
-import MoreIcon from "../Assets/icons/MoreIcon.svg";
-import Person from "../Assets/person.svg";
-import Users from "../Assets/icons/Users-group-fill.svg";
-import Settings from "../Assets/icons/Settings.svg";
-import Timer from "../Assets/icons/time-fill-primary.svg";
-import MapsRoad from "../Assets/icons/Maps-road-map-fill.svg";
+import MoreIcon from "../../Assets/icons/MoreIcon.svg";
+import Person from "../../Assets/person.svg";
+import Settings from "../../Assets/icons/Settings.svg";
+import Timer from "../../Assets/icons/time-fill-primary.svg";
+import MapsRoad from "../../Assets/icons/Maps-road-map-fill.svg";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { Menu, Transition } from "@headlessui/react";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-function StaffShift() {
+function Index() {
   return (
     <div className="">
       <div className="mb-4 p-0 flex items-center justify-between">
@@ -177,4 +166,4 @@ function StaffShift() {
   );
 }
 
-export default StaffShift;
+export default Index;

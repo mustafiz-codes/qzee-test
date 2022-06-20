@@ -1,20 +1,6 @@
-import ReactDOM from "react-dom";
-import { Fragment } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
-import HomeFillIcon from "../Assets/icons/home-fill.svg";
-import Qzee from "../Assets/icons/QZee-icon.svg";
-import Calender from "../Assets/icons/Business-calendar-check-fill.svg";
-import LifeBuoy from "../Assets/icons/MapsLifebuoy-fill.svg";
-import Users from "../Assets/icons/Users-group-fill.svg";
-import Settings from "../Assets/icons/Settings.svg";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { Menu, Transition } from "@headlessui/react";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import Qzee from "../../Assets/icons/QZee-icon.svg";
+import Calender from "../../Assets/icons/Business-calendar-check-fill.svg";
+import Users from "../../Assets/icons/Users-group-fill.svg";
 function Info() {
   return (
     <div>

@@ -1,12 +1,8 @@
-import ReactDOM from "react-dom";
 import { Fragment } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
-import HomeFillIcon from "../Assets/icons/home-fill.svg";
-import Qzee from "../Assets/icons/QZee-icon.svg";
-import Calender from "../Assets/icons/Business-calendar-check-fill.svg";
-import LifeBuoy from "../Assets/icons/MapsLifebuoy-fill.svg";
-import Notification from "../Assets/icons/MediaNotification-3-fill.svg";
-import Profile from "../Assets/icons/ProfileIcon.svg";
+import HomeFillIcon from "../../Assets/icons/home-fill.svg";
+import LifeBuoy from "../../Assets/icons/MapsLifebuoy-fill.svg";
+import Notification from "../../Assets/icons/MediaNotification-3-fill.svg";
+import Profile from "../../Assets/icons/ProfileIcon.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +11,7 @@ import { Menu, Transition } from "@headlessui/react";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-function Topbar() {
+function Index() {
   return (
     <nav className="border-b-2 px-8">
       <div className="h-16 flex items-center justify-between">
@@ -135,4 +131,4 @@ function Topbar() {
   );
 }
 
-export default Topbar;
+export default Index;

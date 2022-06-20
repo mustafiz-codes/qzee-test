@@ -1,17 +1,16 @@
-import ReactDOM from "react-dom";
-import { BrowserRouter, Link } from "react-router-dom";
-import BrandLogo from "../Assets/brand-logo/logo.svg";
-import HomeFillIcon from "../Assets/icons/home-fill.svg";
-import Qzee from "../Assets/icons/QZee-icon.svg";
-import Calender from "../Assets/icons/Business-calendar-check-fill.svg";
-import Restaurant from "../Assets/icons/Maps-restaurant-2-fill.svg";
-import Settigns from "../Assets/icons/Settings.svg";
-import Users from "../Assets/icons/Users-group-fill.svg";
+import { Link } from "react-router-dom";
+import BrandLogo from "../../Assets/brand-logo/logo.svg";
+import HomeFillIcon from "../../Assets/icons/home-fill.svg";
+import Qzee from "../../Assets/icons/QZee-icon.svg";
+import Calender from "../../Assets/icons/Business-calendar-check-fill.svg";
+import Restaurant from "../../Assets/icons/Maps-restaurant-2-fill.svg";
+import Settigns from "../../Assets/icons/Settings.svg";
+import Users from "../../Assets/icons/Users-group-fill.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckSquare, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-function Sidenav() {
+function SideNav() {
   return (
     <aside class="">
       <div className="flex justify-center h-16">
@@ -114,4 +113,4 @@ function Sidenav() {
   );
 }
 
-export default Sidenav;
+export default SideNav;
